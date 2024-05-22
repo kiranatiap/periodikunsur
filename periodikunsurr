@@ -1,0 +1,23 @@
+import streamlit as st #type: ignore
+import option_menu # type: ignore
+from streamlit option_menu # type: ignore
+import pandas as pd # type: ignore
+
+st.sidebar.image("C:\Users\Dinda Kirana\OneDrive\KULIAH DINDA\LPK\LOGO.jpg")
+st.sidebar.header('Selamat Datang di Tabel Periodik Sederhana')
+st.sidebar.subheader('KELOMPOK 8')
+
+
+with st.sidebar:
+    selected2 = option_menu ('Menu',['Pengertian Tabel Periodik Unsur','Fungsi Tabel Periodik Unsur','Tabel Periodik Unsur','Anggota Kelompok'])
+
+
+#with st.sidebar:
+#     selected = option_menu('Menu',['Pengertian','Fungsi','Tabel Periodik'])
+
+
+if selected2 ('Pengertian Tabel Periodik Unsur'):
+    def pengertiantpu():
+        st.title('Pengertian Tabel Periodik Unsur')
+        st.image("C:\Users\Dinda Kirana\OneDrive\KULIAH DINDA\LPK\PENGERTIAN.jpg")
+        
